@@ -2,6 +2,11 @@
 #include <string.h>
 #include "list.h"
 
+#ifdef OPENCV
+#include "opencv2/highgui/highgui_c.h"
+#include "opencv2/imgproc/imgproc_c.h"
+#endif
+
 list *make_list()
 {
 	list *l = malloc(sizeof(list));
